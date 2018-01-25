@@ -1,0 +1,357 @@
+<?xml version="1.0"?>
+<robot>
+
+  <!-- ros_control plugin -->
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/rrbot</robotNamespace>
+      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+    </plugin>
+
+    <plugin name="p3d_base_controller" filename="libgazebo_ros_p3d.so">
+      <alwaysOn>true</alwaysOn>
+      <updateRate>50.0</updateRate>
+      <bodyName>rrbot__link_0</bodyName>
+      <topicName>ground_truth/state</topicName>
+      <gaussianNoise>0.01</gaussianNoise>
+      <frameName>world</frameName>
+      <xyzOffsets>0 0 0</xyzOffsets>
+      <rpyOffsets>0 0 0</rpyOffsets>
+    </plugin>
+	
+    <plugin name="p3d_base_controller" filename="libgazebo_ros_p3d.so">
+      <alwaysOn>true</alwaysOn>
+      <updateRate>50.0</updateRate>
+      <bodyName>rrbot__link_0_clone</bodyName>
+      <topicName>ground_truth/state1</topicName>
+      <gaussianNoise>0.01</gaussianNoise>
+      <frameName>world</frameName>
+      <xyzOffsets>0 0 0</xyzOffsets>
+      <rpyOffsets>0 0 0</rpyOffsets>
+    </plugin>
+
+    <plugin name="p3d_base_controller" filename="libgazebo_ros_p3d.so">
+      <alwaysOn>true</alwaysOn>
+      <updateRate>50.0</updateRate>
+      <bodyName>rrbot__link_0_clone_0</bodyName>
+      <topicName>ground_truth/state2</topicName>
+      <gaussianNoise>0.01</gaussianNoise>
+      <frameName>world</frameName>
+      <xyzOffsets>0 0 0</xyzOffsets>
+      <rpyOffsets>0 0 0</rpyOffsets>
+    </plugin>
+
+    <plugin name="p3d_base_controller" filename="libgazebo_ros_p3d.so">
+      <alwaysOn>true</alwaysOn>
+      <updateRate>50.0</updateRate>
+      <bodyName>rrbot__link_0_clone_1</bodyName>
+      <topicName>ground_truth/state3</topicName>
+      <gaussianNoise>0.01</gaussianNoise>
+      <frameName>world</frameName>
+      <xyzOffsets>0 0 0</xyzOffsets>
+      <rpyOffsets>0 0 0</rpyOffsets>
+    </plugin>
+
+    <plugin name="p3d_base_controller" filename="libgazebo_ros_p3d.so">
+      <alwaysOn>true</alwaysOn>
+      <updateRate>50.0</updateRate>
+      <bodyName>rrbot__link_0_clone_2</bodyName>
+      <topicName>ground_truth/state4</topicName>
+      <gaussianNoise>0.01</gaussianNoise>
+      <frameName>world</frameName>
+      <xyzOffsets>0 0 0</xyzOffsets>
+      <rpyOffsets>0 0 0</rpyOffsets>
+    </plugin>
+
+    <plugin name="p3d_base_controller" filename="libgazebo_ros_p3d.so">
+      <alwaysOn>true</alwaysOn>
+      <updateRate>50.0</updateRate>
+      <bodyName>rrbot__link_0_clone_clone</bodyName>
+      <topicName>ground_truth/state5</topicName>
+      <gaussianNoise>0.01</gaussianNoise>
+      <frameName>world</frameName>
+      <xyzOffsets>0 0 0</xyzOffsets>
+      <rpyOffsets>0 0 0</rpyOffsets>
+    </plugin>
+
+    <plugin name="p3d_base_controller" filename="libgazebo_ros_p3d.so">
+      <alwaysOn>true</alwaysOn>
+      <updateRate>50.0</updateRate>
+      <bodyName>rrbot__link_0_clone_3</bodyName>
+      <topicName>ground_truth/state6</topicName>
+      <gaussianNoise>0.01</gaussianNoise>
+      <frameName>world</frameName>
+      <xyzOffsets>0 0 0</xyzOffsets>
+      <rpyOffsets>0 0 0</rpyOffsets>
+    </plugin>
+
+    <plugin name="p3d_base_controller" filename="libgazebo_ros_p3d.so">
+      <alwaysOn>true</alwaysOn>
+      <updateRate>50.0</updateRate>
+      <bodyName>rrbot__link_0_clone_4</bodyName>
+      <topicName>ground_truth/state7</topicName>
+      <gaussianNoise>0.01</gaussianNoise>
+      <frameName>world</frameName>
+      <xyzOffsets>0 0 0</xyzOffsets>
+      <rpyOffsets>0 0 0</rpyOffsets>
+    </plugin>
+
+    <plugin name="p3d_base_controller" filename="libgazebo_ros_p3d.so">
+      <alwaysOn>true</alwaysOn>
+      <updateRate>50.0</updateRate>
+      <bodyName>rrbot__link_0_clone_5</bodyName>
+      <topicName>ground_truth/state8</topicName>
+      <gaussianNoise>0.01</gaussianNoise>
+      <frameName>world</frameName>
+      <xyzOffsets>0 0 0</xyzOffsets>
+      <rpyOffsets>0 0 0</rpyOffsets>
+    </plugin>
+
+  
+
+
+  </gazebo>
+  
+
+  <gazebo reference="rrbot__link_0">
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <material>Gazebo/Orange</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_0">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_0_clone">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Black</material>
+  </gazebo>
+  <gazebo reference="rrbot__link_0_0_clone_0">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_0_clone_1">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_0_clone_clone">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_0_clone_clone_clone">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Orange</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_0_clone_clone_clone_0">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Orange</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_0_clone_clone_clone_0_clone">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_0_clone_clone_clone_1">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_0_clone_clone_clone_2">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_0_clone_clone_clone_3">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_0_clone_clone_clone_clone">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_clone">
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_clone_0">
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_clone_1">
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_clone_2">
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_clone_3">
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_clone_4">
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_clone_5">
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_clone_6">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_clone_6_clone">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_clone_6_clone_0">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_clone_6_clone_1">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_clone_6_clone_2">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_clone_6_clone_3">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_clone_6_clone_4">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_clone_6_clone_5">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_clone_6_clone_6">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_clone_6_clone_7">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_clone_6_clone_8">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_clone_6_clone_9">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_0_clone_clone">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_2_clone">
+    <mu1>1</mu1>
+    <mu2>1</mu2>
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_2_clone_1">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_2_clone_1_clone">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_2_clone_1_clone_0">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_2_clone_1_clone_0_clone">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_2_clone_clone">
+    <mu1>1</mu1>
+    <mu2>1</mu2>
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_2_clone_clone_0">
+    <mu1>1</mu1>
+    <mu2>1</mu2>
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_2_clone_clone_0_clone">
+    <mu1>1</mu1>
+    <mu2>1</mu2>
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_3">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="rrbot__link_3_clone">
+    <selfCollide>false</selfCollide>
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+
+
+
+ 
+</robot>
